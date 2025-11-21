@@ -66,3 +66,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .bg-dot-pattern {
+    background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .glass-panel {
+    @apply backdrop-blur-md bg-background/40 border border-white/10 shadow-xl;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+}
